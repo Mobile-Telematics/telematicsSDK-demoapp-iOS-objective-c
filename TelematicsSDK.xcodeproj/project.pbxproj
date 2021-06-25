@@ -1,0 +1,462 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6203E1D321C286F300656E8F /* TrackDetailedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6203E1D221C286F300656E8F /* TrackDetailedCell.m */; };
+		6203E1D921C289D500656E8F /* TrackOrigin.m in Sources */ = {isa = PBXBuildFile; fileRef = 6203E1D521C289D400656E8F /* TrackOrigin.m */; };
+		6203E1DA21C289D500656E8F /* Format.m in Sources */ = {isa = PBXBuildFile; fileRef = 6203E1D821C289D500656E8F /* Format.m */; };
+		6203E1DE21C2D18900656E8F /* MainRatingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6203E1DD21C2D18900656E8F /* MainRatingViewController.m */; };
+		6215FD6221C174C000BB76F5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6215FD6121C174C000BB76F5 /* AppDelegate.m */; };
+		6215FD7021C174C100BB76F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6215FD6F21C174C100BB76F5 /* main.m */; };
+		62AA3C225B99775C6B1E7E2D /* Pods_RaxelPulseTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54857F0AA5DE96DC589085BD /* Pods_RaxelPulseTest.framework */; };
+		81B2E541CF6A059CF6B77FAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81B2E3F03F8ABA1388A77B24 /* Main.storyboard */; };
+		81B2E8348E4D756772A41A3C /* TracksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B2EE28F9451E661E7B98F3 /* TracksViewController.m */; };
+		81B2EBAB2F1D9405ED7738E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81B2E759D4996C3F8B742DAD /* Assets.xcassets */; };
+		81B2EF18904E31778E515CEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81B2E6BA143DEF33BB6B7466 /* LaunchScreen.storyboard */; };
+		81B2EF533A2B49D6F7F7A1AB /* Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B2EE75621EA031CA541342 /* Logger.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0CFEFBE74C5EFD0ECC250DAA /* Pods-RaxelPulseTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RaxelPulseTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-RaxelPulseTest/Pods-RaxelPulseTest.release.xcconfig"; sourceTree = "<group>"; };
+		54857F0AA5DE96DC589085BD /* Pods_RaxelPulseTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RaxelPulseTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6203E1D121C286F300656E8F /* TrackDetailedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackDetailedCell.h; sourceTree = "<group>"; };
+		6203E1D221C286F300656E8F /* TrackDetailedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackDetailedCell.m; sourceTree = "<group>"; };
+		6203E1D521C289D400656E8F /* TrackOrigin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackOrigin.m; sourceTree = "<group>"; };
+		6203E1D621C289D500656E8F /* TrackOrigin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackOrigin.h; sourceTree = "<group>"; };
+		6203E1D721C289D500656E8F /* Format.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Format.h; sourceTree = "<group>"; };
+		6203E1D821C289D500656E8F /* Format.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Format.m; sourceTree = "<group>"; };
+		6203E1DC21C2D18900656E8F /* MainRatingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainRatingViewController.h; sourceTree = "<group>"; };
+		6203E1DD21C2D18900656E8F /* MainRatingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainRatingViewController.m; sourceTree = "<group>"; };
+		6215FD5D21C174C000BB76F5 /* TelematicsSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TelematicsSDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6215FD6021C174C000BB76F5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6215FD6121C174C000BB76F5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6215FD6E21C174C100BB76F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6215FD6F21C174C100BB76F5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7E251B7294DE785D6DDE3341 /* Pods-RaxelPulseTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RaxelPulseTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RaxelPulseTest/Pods-RaxelPulseTest.debug.xcconfig"; sourceTree = "<group>"; };
+		81B2E3F03F8ABA1388A77B24 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		81B2E6BA143DEF33BB6B7466 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		81B2E759D4996C3F8B742DAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		81B2E955E7DB8BE9996B10B6 /* Logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Logger.h; sourceTree = "<group>"; };
+		81B2ED97ABE1517AAC87D8D5 /* TracksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TracksViewController.h; sourceTree = "<group>"; };
+		81B2EE28F9451E661E7B98F3 /* TracksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TracksViewController.m; sourceTree = "<group>"; };
+		81B2EE75621EA031CA541342 /* Logger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Logger.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6215FD5A21C174C000BB76F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62AA3C225B99775C6B1E7E2D /* Pods_RaxelPulseTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6203E1D021C286D000656E8F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6203E1D121C286F300656E8F /* TrackDetailedCell.h */,
+				6203E1D221C286F300656E8F /* TrackDetailedCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6203E1D421C289C900656E8F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6203E1D721C289D500656E8F /* Format.h */,
+				6203E1D821C289D500656E8F /* Format.m */,
+				6203E1D621C289D500656E8F /* TrackOrigin.h */,
+				6203E1D521C289D400656E8F /* TrackOrigin.m */,
+				81B2EE75621EA031CA541342 /* Logger.m */,
+				81B2E955E7DB8BE9996B10B6 /* Logger.h */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		6203E1DB21C28C8800656E8F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				81B2E6BA143DEF33BB6B7466 /* LaunchScreen.storyboard */,
+				81B2E759D4996C3F8B742DAD /* Assets.xcassets */,
+				81B2E3F03F8ABA1388A77B24 /* Main.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6215FD5421C174C000BB76F5 = {
+			isa = PBXGroup;
+			children = (
+				6215FD5F21C174C000BB76F5 /* TelematicsSDKTest */,
+				6215FD5E21C174C000BB76F5 /* Products */,
+				B25028B729507A167A5B4067 /* Pods */,
+				92498E5AA612338A5744FA7C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6215FD5E21C174C000BB76F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6215FD5D21C174C000BB76F5 /* TelematicsSDK.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6215FD5F21C174C000BB76F5 /* TelematicsSDKTest */ = {
+			isa = PBXGroup;
+			children = (
+				6215FD6021C174C000BB76F5 /* AppDelegate.h */,
+				6215FD6121C174C000BB76F5 /* AppDelegate.m */,
+				6215FD6E21C174C100BB76F5 /* Info.plist */,
+				81B2E6B1D3156C7BE0509E28 /* ViewControllers */,
+				6203E1D021C286D000656E8F /* View */,
+				6203E1DB21C28C8800656E8F /* Resources */,
+				6203E1D421C289C900656E8F /* Utils */,
+				6215FD6F21C174C100BB76F5 /* main.m */,
+			);
+			path = TelematicsSDKTest;
+			sourceTree = "<group>";
+		};
+		81B2E6B1D3156C7BE0509E28 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6203E1DC21C2D18900656E8F /* MainRatingViewController.h */,
+				6203E1DD21C2D18900656E8F /* MainRatingViewController.m */,
+				81B2ED97ABE1517AAC87D8D5 /* TracksViewController.h */,
+				81B2EE28F9451E661E7B98F3 /* TracksViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		92498E5AA612338A5744FA7C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				54857F0AA5DE96DC589085BD /* Pods_RaxelPulseTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B25028B729507A167A5B4067 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7E251B7294DE785D6DDE3341 /* Pods-RaxelPulseTest.debug.xcconfig */,
+				0CFEFBE74C5EFD0ECC250DAA /* Pods-RaxelPulseTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6215FD5C21C174C000BB76F5 /* TelematicsSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6215FD7321C174C100BB76F5 /* Build configuration list for PBXNativeTarget "TelematicsSDK" */;
+			buildPhases = (
+				B9CF2A7926E2C5CAA7E7BC28 /* [CP] Check Pods Manifest.lock */,
+				6215FD5921C174C000BB76F5 /* Sources */,
+				6215FD5A21C174C000BB76F5 /* Frameworks */,
+				6215FD5B21C174C000BB76F5 /* Resources */,
+				B10BF8056ED24DE64B4C466D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TelematicsSDK;
+			productName = RaxelPulseTest;
+			productReference = 6215FD5D21C174C000BB76F5 /* TelematicsSDK.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6215FD5521C174C000BB76F5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1220;
+				ORGANIZATIONNAME = "Raxel Telematics";
+				TargetAttributes = {
+					6215FD5C21C174C000BB76F5 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 6215FD5821C174C000BB76F5 /* Build configuration list for PBXProject "TelematicsSDK" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6215FD5421C174C000BB76F5;
+			productRefGroup = 6215FD5E21C174C000BB76F5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6215FD5C21C174C000BB76F5 /* TelematicsSDK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6215FD5B21C174C000BB76F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81B2EF18904E31778E515CEB /* LaunchScreen.storyboard in Resources */,
+				81B2EBAB2F1D9405ED7738E6 /* Assets.xcassets in Resources */,
+				81B2E541CF6A059CF6B77FAA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B10BF8056ED24DE64B4C466D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RaxelPulseTest/Pods-RaxelPulseTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RaxelPulseTest/Pods-RaxelPulseTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RaxelPulseTest/Pods-RaxelPulseTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9CF2A7926E2C5CAA7E7BC28 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RaxelPulseTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6215FD5921C174C000BB76F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6215FD7021C174C100BB76F5 /* main.m in Sources */,
+				6215FD6221C174C000BB76F5 /* AppDelegate.m in Sources */,
+				6203E1DA21C289D500656E8F /* Format.m in Sources */,
+				6203E1D321C286F300656E8F /* TrackDetailedCell.m in Sources */,
+				6203E1D921C289D500656E8F /* TrackOrigin.m in Sources */,
+				81B2EF533A2B49D6F7F7A1AB /* Logger.m in Sources */,
+				6203E1DE21C2D18900656E8F /* MainRatingViewController.m in Sources */,
+				81B2E8348E4D756772A41A3C /* TracksViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		6215FD7121C174C100BB76F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6215FD7221C174C100BB76F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6215FD7421C174C100BB76F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E251B7294DE785D6DDE3341 /* Pods-RaxelPulseTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MTK2QVQ5B8;
+				INFOPLIST_FILE = TelematicsSDKTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.telematicssdk.demoappobjc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6215FD7521C174C100BB76F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CFEFBE74C5EFD0ECC250DAA /* Pods-RaxelPulseTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MTK2QVQ5B8;
+				INFOPLIST_FILE = TelematicsSDKTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.telematicssdk.demoappobjc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6215FD5821C174C000BB76F5 /* Build configuration list for PBXProject "TelematicsSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6215FD7121C174C100BB76F5 /* Debug */,
+				6215FD7221C174C100BB76F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6215FD7321C174C100BB76F5 /* Build configuration list for PBXNativeTarget "TelematicsSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6215FD7421C174C100BB76F5 /* Debug */,
+				6215FD7521C174C100BB76F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6215FD5521C174C000BB76F5 /* Project object */;
+}

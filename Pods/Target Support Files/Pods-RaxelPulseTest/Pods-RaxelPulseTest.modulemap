@@ -1,0 +1,6 @@
+framework module Pods_RaxelPulseTest {
+  umbrella header "Pods-RaxelPulseTest-umbrella.h"
+
+  export *
+  module * { export * }
+}
