@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0AC344E3FBC84CF2AFAC74BF /* Pods_TelematicsSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB2BE3F318FA64889FCB5856 /* Pods_TelematicsSDK.framework */; };
 		6203E1D321C286F300656E8F /* TrackDetailedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6203E1D221C286F300656E8F /* TrackDetailedCell.m */; };
 		6203E1D921C289D500656E8F /* TrackOrigin.m in Sources */ = {isa = PBXBuildFile; fileRef = 6203E1D521C289D400656E8F /* TrackOrigin.m */; };
 		6203E1DA21C289D500656E8F /* Format.m in Sources */ = {isa = PBXBuildFile; fileRef = 6203E1D821C289D500656E8F /* Format.m */; };
 		6203E1DE21C2D18900656E8F /* MainRatingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6203E1DD21C2D18900656E8F /* MainRatingViewController.m */; };
 		6215FD6221C174C000BB76F5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6215FD6121C174C000BB76F5 /* AppDelegate.m */; };
 		6215FD7021C174C100BB76F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6215FD6F21C174C100BB76F5 /* main.m */; };
-		62AA3C225B99775C6B1E7E2D /* Pods_RaxelPulseTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54857F0AA5DE96DC589085BD /* Pods_RaxelPulseTest.framework */; };
 		81B2E541CF6A059CF6B77FAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81B2E3F03F8ABA1388A77B24 /* Main.storyboard */; };
 		81B2E8348E4D756772A41A3C /* TracksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B2EE28F9451E661E7B98F3 /* TracksViewController.m */; };
 		81B2EBAB2F1D9405ED7738E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81B2E759D4996C3F8B742DAD /* Assets.xcassets */; };
@@ -22,8 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03890A1BC7CC9B37FBA42F79 /* Pods-TelematicsSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TelematicsSDK.release.xcconfig"; path = "Pods/Target Support Files/Pods-TelematicsSDK/Pods-TelematicsSDK.release.xcconfig"; sourceTree = "<group>"; };
 		0CFEFBE74C5EFD0ECC250DAA /* Pods-RaxelPulseTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RaxelPulseTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-RaxelPulseTest/Pods-RaxelPulseTest.release.xcconfig"; sourceTree = "<group>"; };
-		54857F0AA5DE96DC589085BD /* Pods_RaxelPulseTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RaxelPulseTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6203E1D121C286F300656E8F /* TrackDetailedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackDetailedCell.h; sourceTree = "<group>"; };
 		6203E1D221C286F300656E8F /* TrackDetailedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackDetailedCell.m; sourceTree = "<group>"; };
 		6203E1D521C289D400656E8F /* TrackOrigin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackOrigin.m; sourceTree = "<group>"; };
@@ -45,6 +45,8 @@
 		81B2ED97ABE1517AAC87D8D5 /* TracksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TracksViewController.h; sourceTree = "<group>"; };
 		81B2EE28F9451E661E7B98F3 /* TracksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TracksViewController.m; sourceTree = "<group>"; };
 		81B2EE75621EA031CA541342 /* Logger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Logger.m; sourceTree = "<group>"; };
+		CB2BE3F318FA64889FCB5856 /* Pods_TelematicsSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TelematicsSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E46D8809951F85F48A987A3B /* Pods-TelematicsSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TelematicsSDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TelematicsSDK/Pods-TelematicsSDK.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62AA3C225B99775C6B1E7E2D /* Pods_RaxelPulseTest.framework in Frameworks */,
+				0AC344E3FBC84CF2AFAC74BF /* Pods_TelematicsSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,8 +119,8 @@
 				6215FD6E21C174C100BB76F5 /* Info.plist */,
 				81B2E6B1D3156C7BE0509E28 /* ViewControllers */,
 				6203E1D021C286D000656E8F /* View */,
-				6203E1DB21C28C8800656E8F /* Resources */,
 				6203E1D421C289C900656E8F /* Utils */,
+				6203E1DB21C28C8800656E8F /* Resources */,
 				6215FD6F21C174C100BB76F5 /* main.m */,
 			);
 			path = TelematicsSDKTest;
@@ -138,7 +140,7 @@
 		92498E5AA612338A5744FA7C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				54857F0AA5DE96DC589085BD /* Pods_RaxelPulseTest.framework */,
+				CB2BE3F318FA64889FCB5856 /* Pods_TelematicsSDK.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -148,6 +150,8 @@
 			children = (
 				7E251B7294DE785D6DDE3341 /* Pods-RaxelPulseTest.debug.xcconfig */,
 				0CFEFBE74C5EFD0ECC250DAA /* Pods-RaxelPulseTest.release.xcconfig */,
+				E46D8809951F85F48A987A3B /* Pods-TelematicsSDK.debug.xcconfig */,
+				03890A1BC7CC9B37FBA42F79 /* Pods-TelematicsSDK.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -231,15 +235,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RaxelPulseTest/Pods-RaxelPulseTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-TelematicsSDK/Pods-TelematicsSDK-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RaxelPulseTest/Pods-RaxelPulseTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-TelematicsSDK/Pods-TelematicsSDK-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RaxelPulseTest/Pods-RaxelPulseTest-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TelematicsSDK/Pods-TelematicsSDK-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B9CF2A7926E2C5CAA7E7BC28 /* [CP] Check Pods Manifest.lock */ = {
@@ -257,7 +261,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RaxelPulseTest-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-TelematicsSDK-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -337,7 +341,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -391,7 +395,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -401,12 +405,13 @@
 		};
 		6215FD7421C174C100BB76F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7E251B7294DE785D6DDE3341 /* Pods-RaxelPulseTest.debug.xcconfig */;
+			baseConfigurationReference = E46D8809951F85F48A987A3B /* Pods-TelematicsSDK.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MTK2QVQ5B8;
 				INFOPLIST_FILE = TelematicsSDKTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -419,12 +424,13 @@
 		};
 		6215FD7521C174C100BB76F5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0CFEFBE74C5EFD0ECC250DAA /* Pods-RaxelPulseTest.release.xcconfig */;
+			baseConfigurationReference = 03890A1BC7CC9B37FBA42F79 /* Pods-TelematicsSDK.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MTK2QVQ5B8;
 				INFOPLIST_FILE = TelematicsSDKTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

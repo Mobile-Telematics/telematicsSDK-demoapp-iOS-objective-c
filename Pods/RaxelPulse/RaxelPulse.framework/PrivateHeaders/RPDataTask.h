@@ -84,8 +84,12 @@ typedef void(^RPDataTaskCompletionBlock)(RPDataTask *);
 
 #pragma mark - Ping
 
-+ (RPDataTask *)heartbeat:(NSString *)reason;
-+ (RPDataTask *)heartbeat: (NSString *)reason rtlData:(nullable NSMutableDictionary*)rtlData;
+typedef void(^RPDataTaskCallback)(Boolean success);
+
++ (void)heartbeat: (NSString *)reason callback:(nullable RPDataTaskCallback)callback;
++ (void)heartbeat: (NSString *)reason rtlData:(nullable NSMutableDictionary*)rtlData callback:(nullable RPDataTaskCallback)callback;
+//+ (RPDataTask *)heartbeat:(NSString *)reason;
+//+ (RPDataTask *)heartbeat: (NSString *)reason rtlData:(nullable NSMutableDictionary*)rtlData;
 
 #pragma mark - Realtime
 
@@ -150,5 +154,8 @@ typedef void(^RPDataTaskCompletionBlock)(RPDataTask *);
 + (RPDataTask *)removeAllFutureTag;
 + (RPDataTask *)addFutureiTag:(RPInnerTag *)itag;
 + (RPDataTask *)removeFutureiTag:(RPInnerTag *)itag;
+
+
++ (RPDataTask *)sendEvent:(NSDictionary *)params;
 
 @end

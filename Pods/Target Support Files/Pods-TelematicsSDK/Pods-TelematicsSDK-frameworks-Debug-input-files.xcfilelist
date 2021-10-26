@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-TelematicsSDK/Pods-TelematicsSDK-frameworks.sh
+${BUILT_PRODUCTS_DIR}/PNChart/PNChart.framework
+${PODS_ROOT}/RaxelPulse/RaxelPulse.framework
+${BUILT_PRODUCTS_DIR}/UICountingLabel/UICountingLabel.framework
