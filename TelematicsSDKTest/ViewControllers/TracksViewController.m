@@ -30,7 +30,7 @@
 }
 
 - (void)loadTracks {
-    [[RPEntry instance].api getTracksWithOffset:0 limit:100 completion:^(id response, NSError *error) {
+    [[RPEntry instance].api getTracksWithOffset:0 limit:10 completion:^(id response, NSError *error) {
         if (error != nil) {
             return;
         }

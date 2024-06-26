@@ -13,7 +13,7 @@
 		6203E1DE21C2D18900656E8F /* MainRatingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6203E1DD21C2D18900656E8F /* MainRatingViewController.m */; };
 		6215FD6221C174C000BB76F5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6215FD6121C174C000BB76F5 /* AppDelegate.m */; };
 		6215FD7021C174C100BB76F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6215FD6F21C174C100BB76F5 /* main.m */; };
-		6E85C12D12DB7504E5979634 /* Pods_TelematicsSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A293F52659E90B29F9B794 /* Pods_TelematicsSDK.framework */; };
+		7E6787748DAD66DED11CDD1A /* Pods_TelematicsSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCD19AAB67539C37A59422EC /* Pods_TelematicsSDK.framework */; };
 		81B2E541CF6A059CF6B77FAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81B2E3F03F8ABA1388A77B24 /* Main.storyboard */; };
 		81B2E8348E4D756772A41A3C /* TracksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B2EE28F9451E661E7B98F3 /* TracksViewController.m */; };
 		81B2EBAB2F1D9405ED7738E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81B2E759D4996C3F8B742DAD /* Assets.xcassets */; };
@@ -22,7 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		57EFD2D7F548AFDC82A46620 /* Pods-TelematicsSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TelematicsSDK.release.xcconfig"; path = "Target Support Files/Pods-TelematicsSDK/Pods-TelematicsSDK.release.xcconfig"; sourceTree = "<group>"; };
+		27645BE1BD7F309FBE5F117F /* Pods-TelematicsSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TelematicsSDK.debug.xcconfig"; path = "Target Support Files/Pods-TelematicsSDK/Pods-TelematicsSDK.debug.xcconfig"; sourceTree = "<group>"; };
+		5CCD6BD862C000C642A8B9A6 /* Pods-TelematicsSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TelematicsSDK.release.xcconfig"; path = "Target Support Files/Pods-TelematicsSDK/Pods-TelematicsSDK.release.xcconfig"; sourceTree = "<group>"; };
 		6203E1D121C286F300656E8F /* TrackDetailedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackDetailedCell.h; sourceTree = "<group>"; };
 		6203E1D221C286F300656E8F /* TrackDetailedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackDetailedCell.m; sourceTree = "<group>"; };
 		6203E1D521C289D400656E8F /* TrackOrigin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackOrigin.m; sourceTree = "<group>"; };
@@ -43,8 +44,7 @@
 		81B2ED97ABE1517AAC87D8D5 /* TracksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TracksViewController.h; sourceTree = "<group>"; };
 		81B2EE28F9451E661E7B98F3 /* TracksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TracksViewController.m; sourceTree = "<group>"; };
 		81B2EE75621EA031CA541342 /* Logger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Logger.m; sourceTree = "<group>"; };
-		84A293F52659E90B29F9B794 /* Pods_TelematicsSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TelematicsSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9BAD6B176A86418CAF648C26 /* Pods-TelematicsSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TelematicsSDK.debug.xcconfig"; path = "Target Support Files/Pods-TelematicsSDK/Pods-TelematicsSDK.debug.xcconfig"; sourceTree = "<group>"; };
+		BCD19AAB67539C37A59422EC /* Pods_TelematicsSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TelematicsSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E85C12D12DB7504E5979634 /* Pods_TelematicsSDK.framework in Frameworks */,
+				7E6787748DAD66DED11CDD1A /* Pods_TelematicsSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,18 +62,10 @@
 		53564913C5030A11F193C400 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9BAD6B176A86418CAF648C26 /* Pods-TelematicsSDK.debug.xcconfig */,
-				57EFD2D7F548AFDC82A46620 /* Pods-TelematicsSDK.release.xcconfig */,
+				27645BE1BD7F309FBE5F117F /* Pods-TelematicsSDK.debug.xcconfig */,
+				5CCD6BD862C000C642A8B9A6 /* Pods-TelematicsSDK.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		5EE6746A0D083E47B373C691 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				84A293F52659E90B29F9B794 /* Pods_TelematicsSDK.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		6203E1D021C286D000656E8F /* View */ = {
@@ -114,7 +106,7 @@
 				6215FD5F21C174C000BB76F5 /* TelematicsSDKTest */,
 				6215FD5E21C174C000BB76F5 /* Products */,
 				53564913C5030A11F193C400 /* Pods */,
-				5EE6746A0D083E47B373C691 /* Frameworks */,
+				9E2A81EA3E2E723FBA3F9E1E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -152,6 +144,14 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
+		9E2A81EA3E2E723FBA3F9E1E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BCD19AAB67539C37A59422EC /* Pods_TelematicsSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -159,11 +159,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6215FD7321C174C100BB76F5 /* Build configuration list for PBXNativeTarget "TelematicsSDK" */;
 			buildPhases = (
-				E77CF32E598558CB10508FA5 /* [CP] Check Pods Manifest.lock */,
+				9BBFCF19A524C009E8013E06 /* [CP] Check Pods Manifest.lock */,
 				6215FD5921C174C000BB76F5 /* Sources */,
 				6215FD5A21C174C000BB76F5 /* Frameworks */,
 				6215FD5B21C174C000BB76F5 /* Resources */,
-				E2B91D1353E183E0EEBA80D5 /* [CP] Embed Pods Frameworks */,
+				96071F9CA1D5AD723610C6CD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -225,7 +225,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		E2B91D1353E183E0EEBA80D5 /* [CP] Embed Pods Frameworks */ = {
+		96071F9CA1D5AD723610C6CD /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -242,7 +242,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TelematicsSDK/Pods-TelematicsSDK-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E77CF32E598558CB10508FA5 /* [CP] Check Pods Manifest.lock */ = {
+		9BBFCF19A524C009E8013E06 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -401,7 +401,7 @@
 		};
 		6215FD7421C174C100BB76F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9BAD6B176A86418CAF648C26 /* Pods-TelematicsSDK.debug.xcconfig */;
+			baseConfigurationReference = 27645BE1BD7F309FBE5F117F /* Pods-TelematicsSDK.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -424,7 +424,7 @@
 		};
 		6215FD7521C174C100BB76F5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 57EFD2D7F548AFDC82A46620 /* Pods-TelematicsSDK.release.xcconfig */;
+			baseConfigurationReference = 5CCD6BD862C000C642A8B9A6 /* Pods-TelematicsSDK.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
