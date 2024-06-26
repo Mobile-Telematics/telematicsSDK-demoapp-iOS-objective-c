@@ -22,17 +22,19 @@ Step 3: Open AppDelegate.m and insert your DeviceToken to this line:
         
 Step 4: Implement code signing for your iOS project if you want to install this app to your iOS device.
 
-This is Objective-C language version. If you need Objective-C visit please: https://github.com/Mobile-Telematics/telematicsSDK-demoapp-iOS-swift
+This is Objective-C language version. If you need Swift visit please: https://github.com/Mobile-Telematics/telematicsSDK-demoapp-iOS-swift
 
 ## Links
 
-[Official product Web-page](https://telematicssdk.com/)
+[Official product Web-page](https://www.damoov.com)
 
-[Official API services web-page](https://www.telematicssdk.com/api-services/)
+[Official API services web-page](https://www.damoov.com/telematics-api/)
 
-[Official SDK and API references](https://www.telematicssdk.com/api-services/)
+[Official SDK and API references](https://www.damoov.com/telematics-api/)
 
-[Official ZenRoad web-page](https://www.telematicssdk.com/telematics-app/)
+[Official Docs web-page](https://docs.damoov.com/)
+
+[Official ZenRoad web-page](https://www.damoov.com/telematics-app/)
 
 [Official ZenRoad app for iOS](https://apps.apple.com/jo/app/zenroad/id1563218393)
 
@@ -40,4 +42,4 @@ This is Objective-C language version. If you need Objective-C visit please: http
 
 [Official ZenRoad app for Huawei](https://appgallery.huawei.com/#/app/C104163115)
 
-###### Copyright © 2020-2021 DATA MOTION PTE. LTD. All rights reserved.
+###### Copyright © 2020-2024 DATA MOTION PTE. LTD. All rights reserved.
