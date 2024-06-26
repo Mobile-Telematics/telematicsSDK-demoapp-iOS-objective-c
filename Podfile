@@ -1,10 +1,18 @@
-platform :ios, '11.0'
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '12.0'
+use_frameworks!
 
 target 'TelematicsSDK' do
-  use_frameworks!
+  pod 'RaxelPulse', '6.0.3'
+  pod 'UICountingLabel', '1.2.0'
+  pod 'PNChart', '0.8.9'
 
-  pod 'RaxelPulse', '5.11'
-  pod 'UICountingLabel', :inhibit_warnings => true
-  pod 'PNChart', :inhibit_warnings => true
+end
 
+post_install do |installer|
+     installer.pods_project.targets.each do |target|
+        target.build_configurations.each do |config|
+           config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '12.0'
+      end
+   end
 end

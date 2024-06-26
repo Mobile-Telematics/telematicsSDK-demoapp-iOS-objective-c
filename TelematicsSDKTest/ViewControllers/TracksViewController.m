@@ -22,6 +22,10 @@
     [super viewDidLoad];
     self.tracksTableView.dataSource = self;
     self.tracksTableView.delegate = self;
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
     [self loadTracks];
 }
 
@@ -39,6 +43,7 @@
         NSArray <RPTrackProcessed *> *tracks = feed.tracks;
 
         dispatch_async(dispatch_get_main_queue(), ^{
+            NSLog(@"tracks count: %lu", (unsigned long)tracks.count);
             self.tracks = tracks;
             [self.tracksTableView reloadData];
         });
