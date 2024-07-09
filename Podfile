@@ -3,7 +3,7 @@ platform :ios, '12.0'
 use_frameworks!
 
 target 'TelematicsSDK' do
-  pod 'RaxelPulse', '6.0.3'
+  pod 'RaxelPulse', '6.0.4'
   pod 'UICountingLabel', '1.2.0'
   pod 'PNChart', '0.8.9'
 

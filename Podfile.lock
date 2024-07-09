@@ -1,25 +1,26 @@
 PODS:
   - PNChart (0.8.9):
     - UICountingLabel (~> 1.2.0)
-  - RaxelPulse (6.0.3)
+  - RaxelPulse (6.0.4)
   - UICountingLabel (1.2.0)
 
 DEPENDENCIES:
   - PNChart (= 0.8.9)
-  - RaxelPulse (= 6.0.3)
+  - RaxelPulse (= 6.0.4)
   - UICountingLabel (= 1.2.0)
 
 SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - RaxelPulse
   trunk:
     - PNChart
-    - RaxelPulse
     - UICountingLabel
 
 SPEC CHECKSUMS:
   PNChart: 84774d225c2126ded6c93d4dbe6ae98c3a73c2d2
-  RaxelPulse: f61b7c2082feb3a42aa0393aca552cd8f1097f2d
+  RaxelPulse: 9d336698d172db7fe09f8af924c4b0100a0c3cfc
   UICountingLabel: 1db4e7d023e1762171eb226d6dff47a7a84f27aa
 
-PODFILE CHECKSUM: 003d2bf51845187a595b79736455aae43cc30095
+PODFILE CHECKSUM: 42e58fa4919a8c42448922ee9f5fb5f6f9287a53
 
 COCOAPODS: 1.15.2
