@@ -1,12 +1,12 @@
 PODS:
   - PNChart (0.8.9):
     - UICountingLabel (~> 1.2.0)
-  - RaxelPulse (6.0.5)
+  - RaxelPulse (6.0.6)
   - UICountingLabel (1.2.0)
 
 DEPENDENCIES:
   - PNChart (= 0.8.9)
-  - RaxelPulse (= 6.0.5)
+  - RaxelPulse (= 6.0.6)
   - UICountingLabel (= 1.2.0)
 
 SPEC REPOS:
@@ -18,9 +18,9 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   PNChart: 84774d225c2126ded6c93d4dbe6ae98c3a73c2d2
-  RaxelPulse: a4a59fa48443d6d86e64bd8160943a699b51f228
+  RaxelPulse: 8322321c1bb290709c6ab1cff73c3f1dc5be136b
   UICountingLabel: 1db4e7d023e1762171eb226d6dff47a7a84f27aa
 
-PODFILE CHECKSUM: 94b008691ca70d4a6f55e607964887bd31d7ad84
+PODFILE CHECKSUM: 90051ac8f2476898b71335c90e74d10507a70d74
 
 COCOAPODS: 1.15.2
