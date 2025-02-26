@@ -7,8 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import <RaxelPulse/RaxelPulse.h>
-#import "Logger.h"
+#import <TelematicsSDK//TelematicsSDK.h>
 
 @interface AppDelegate () <RPSpeedLimitDelegate, RPTrackingStateListenerDelegate, RPAccuracyAuthorizationDelegate, RPLowPowerModeDelegate, RPLocationDelegate>
 
@@ -18,7 +17,29 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [RPEntry initializeWithRequestingPermissions:NO];
+    
+    [RPEntry initializeSDK];
+    
+    [RPEntry instance].speedLimitDelegate = self;
+    [RPEntry instance].trackingStateDelegate = self;
+    [RPEntry instance].accuracyAuthorizationDelegate = self;
+    [RPEntry instance].lowPowerModeDelegate = self;
+    [RPEntry instance].locationDelegate = self;
+    
+    if ([self userIsAuthenticated]) {
+        [RPEntry instance].virtualDeviceToken = [self getDeviceToken];
+    } else {
+        /// You can't set an empty device token.
+        /// You must use removeVirtualDeviceToken method for logout from Raxel.
+        [[RPEntry instance] removeVirtualDeviceToken];
+    }
+
+    [RPEntry instance].disableTracking = NO;
+    
+    if (@available(iOS 13.0, *)) {
+        [_window setOverrideUserInterfaceStyle:UIUserInterfaceStyleLight];
+    }
+
     //PAGE 1 WIZARD TEXT 1
     NSMutableParagraphStyle *paragraphStyle = [[NSParagraphStyle defaultParagraphStyle] mutableCopy];
     paragraphStyle.lineBreakMode = NSLineBreakByWordWrapping;
@@ -186,17 +207,26 @@
 
 
     //FINALLY WIZARD
-    RPCPageTexts *whileInUsePage = [RPCPageTexts initWithPageText:page1_completeText1 alertText:page1_completeText2 buttonsText:page1_buttonsList selected:0];
-    RPCPageTexts *motionPage = [RPCPageTexts initWithPageText:page2_completeText1 alertText:page2_completeText2 buttonsText:page2_buttonsList selected:1];
-    RPCPageTexts *pushPage = [RPCPageTexts initWithPageText:page3_completeText1 alertText:page3_completeText2 buttonsText:page3_buttonsList selected:1];
-    RPCPageTexts *alwaysPage = [RPCPageTexts initWithPageText:page4_completeText1 alertText:page4_completeText2 buttonsText:page4_buttonsList selected:1];
+    RPPageTexts *whileInUsePage = [[RPPageTexts alloc] initWithPageText:page1_completeText1
+                                                              alertText:page1_completeText2
+                                                            buttonsText:page1_buttonsList
+                                                               selected:0];
+    RPPageTexts *motionPage = [[RPPageTexts alloc] initWithPageText:page2_completeText1
+                                                          alertText:page2_completeText2
+                                                        buttonsText:page2_buttonsList selected:1];
+    RPPageTexts *pushPage = [[RPPageTexts alloc] initWithPageText:page3_completeText1
+                                                        alertText:page3_completeText2
+                                                      buttonsText:page3_buttonsList selected:1];
+    RPPageTexts *alwaysPage = [[RPPageTexts alloc] initWithPageText:page4_completeText1
+                                                          alertText:page4_completeText2
+                                                        buttonsText:page4_buttonsList
+                                                           selected:1];
 
-    NSArray<RPCPageTexts *> *customPages = [[NSArray alloc] initWithObjects:whileInUsePage, motionPage, pushPage, alwaysPage, nil];
-    [[RPCSettings returnInstance] setWizardPages:customPages];
+    NSArray<RPPageTexts *> *customPages = [[NSArray alloc] initWithObjects:whileInUsePage, motionPage, pushPage, alwaysPage, nil];
+    [[RPSettings returnInstance] setWizardPages:customPages];
     
     // Example of permissions access callback
-    
-    [[RPCPermissionsWizard returnInstance] setupHandlersWithUserNotificationResponce:^(BOOL granted, NSError * _Nullable error) {
+    [[RPPermissionsWizard returnInstance] setupHandlersWithUserNotificationResponce:^(BOOL granted, NSError * _Nullable error) {
         if (error != nil) {
             NSLog(@"error while requesting notification permission. Error code %li, error description %@",
                   (long)error.code, error.description);
@@ -209,26 +239,11 @@
     }];
     
     // Example of Wizard integration
-    
-    [[RPCPermissionsWizard returnInstance] launchWithFinish:^(BOOL showWizzard) {
-        [RPEntry initializeWithRequestingPermissions:YES];
-        [RPEntry instance].speedLimitDelegate = self;
-        [RPEntry instance].trackingStateDelegate = self;
-        [RPEntry instance].accuracyAuthorizationDelegate = self;
-        [RPEntry instance].lowPowerModeDelegate = self;
-        [RPEntry instance].locationDelegate = self;
-        
-        if ([self userIsAuthenticated]) {
-            [RPEntry instance].virtualDeviceToken = [self getDeviceToken];
-        } else {
-            /// You can't set an empty device token.
-            /// You must use removeVirtualDeviceToken method for logout from Raxel.
-            [[RPEntry instance] removeVirtualDeviceToken];
-        }
-
-        [RPEntry instance].disableTracking = NO;
-        [RPEntry application:application didFinishLaunchingWithOptions:launchOptions];
+    [[RPPermissionsWizard returnInstance] launchWithFinish:^(BOOL finished) {
+        NSLog(@"wizard finished: %d", finished);
     }];
+    
+    [[RPEntry instance] application:application didFinishLaunchingWithOptions:launchOptions];
     return YES;
 }
 
@@ -245,32 +260,38 @@
         
 #pragma mark - App Delegate Methods
 
-- (void)application:(UIApplication *)application handleEventsForBackgroundURLSession:(nonnull NSString *)identifier completionHandler:(nonnull void (^)(void))completionHandler {
-    [RPEntry application:application handleEventsForBackgroundURLSession:identifier completionHandler:completionHandler];
+- (void)application:(UIApplication *)application
+handleEventsForBackgroundURLSession:(nonnull NSString *)identifier
+  completionHandler:(nonnull void (^)(void))completionHandler {
+    [[RPEntry instance] application:application
+handleEventsForBackgroundURLSession:identifier
+                  completionHandler:completionHandler];
 }
 
 - (void)applicationDidReceiveMemoryWarning:(UIApplication *)application {
-    [RPEntry applicationDidReceiveMemoryWarning:application];
+    [[RPEntry instance] applicationDidReceiveMemoryWarning:application];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
-    [RPEntry applicationWillTerminate:application];
+    [[RPEntry instance] applicationWillTerminate:application];
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
-    [RPEntry applicationDidEnterBackground:application];
+    [[RPEntry instance] applicationDidEnterBackground:application];
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
-    [RPEntry applicationWillEnterForeground:application];
+    [[RPEntry instance] applicationWillEnterForeground:application];
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
-    [RPEntry applicationDidBecomeActive:application];
+    [[RPEntry instance] applicationDidBecomeActive:application];
 }
 
-- (void)application:(UIApplication *)application performFetchWithCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler {
-    [RPEntry application:application performFetchWithCompletionHandler:^{
+- (void)application:(UIApplication *)application
+performFetchWithCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler {
+    [[RPEntry instance] application:application
+  performFetchWithCompletionHandler:^{
         completionHandler(UIBackgroundFetchResultNewData);
     }];
 }
@@ -281,7 +302,7 @@
                       andIdentifier:@"wrongAccuracyAuthorization"];
 }
 
-- (void)lowPowerMode:(Boolean)state {
+- (void)lowPowerMode:(BOOL)state {
     if (state) {
         [self showNotificationWithTitle:@"Low Power Mode"
                                    body:@"Your trips may be not recorded. Please, follow to Settings=>Battery=>Low Power"
@@ -306,13 +327,17 @@
     return 100;
 }
 
-- (void)speedLimitNotification:(double)speedLimit speed:(double)speed latitude:(double)latitude longitude:(double)longitude date:(NSDate *)date {
+- (void)speedLimitNotification:(double)speedLimit
+                         speed:(double)speed
+                      latitude:(double)latitude
+                     longitude:(double)longitude
+                          date:(NSDate *)date {
     [self showNotificationWithTitle:@"Overspeed"
                                body:[NSString stringWithFormat:@"You speed is %f at lat: %f lon:%f", speed, latitude, longitude]
                       andIdentifier:@"overspeed"];
 }
 
-- (void)trackingStateChanged:(Boolean)state {
+- (void)trackingStateChanged:(BOOL)state {
     NSString *body = @"Tracking Stoped";
     if (state) {
         body = @"Tracking Started";
@@ -326,7 +351,7 @@
     NSLog(@"location = %@", location);
 }
 
-- (void)onNewEvents:(NSMutableArray *)events {
+- (void)onNewEvents:(NSArray<RPEventPoint *> *)events {
     //TODO NEW EVENTS IF NEEDED
 }
 

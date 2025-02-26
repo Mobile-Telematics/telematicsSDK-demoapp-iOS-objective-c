@@ -8,7 +8,6 @@
 
 #import "TrackOrigin.h"
 
-
 @implementation TrackOrigin
 
 static NSArray<NSString *> *titles = nil;
@@ -53,40 +52,46 @@ static NSArray<NSString *> *images = nil;
     
     return [UIImage imageNamed:name];
 }
-
-+ (TrackOriginType)typeFromTrackOriginCode:(NSString *)code {
-    if (!code) {
-        return TrackOriginTypeUnknown;
-    }
+ 
++ (TrackOriginType)typeFromTrackOriginCode:(RPTrackOriginCode)trackOriginCode {
     TrackOriginType result = TrackOriginTypeOther;
     
-    if ([code isEqualToString:@"OriginalDriver"]) {
-        result = TrackOriginTypeOriginalDriver;
+    switch (trackOriginCode) {
+        case RPTrackOriginCodeOriginalDriver:
+            result = TrackOriginTypeOriginalDriver;
+            break;
+        case RPTrackOriginCodeBicycle:
+            result = TrackOriginTypeBicycle;
+            break;
+        case RPTrackOriginCodeBus:
+            result = TrackOriginTypeBus;
+            break;
+        case RPTrackOriginCodeMotorcycle:
+            result = TrackOriginTypeMotorcycle;
+            break;
+        case RPTrackOriginCodeOther:
+            result = TrackOriginTypeOther;
+            break;
+        case RPTrackOriginCodePassenger:
+            result = TrackOriginTypeCar;
+            break;
+        case RPTrackOriginCodeRunning:
+            result = TrackOriginTypeRunning;
+            break;
+        case RPTrackOriginCodeTaxi:
+            result = TrackOriginTypeTaxi;
+            break;
+        case RPTrackOriginCodeTrain:
+            result = TrackOriginTypeTrain;
+            break;
+        case RPTrackOriginCodeWalking:
+            result = TrackOriginTypeWalking;
+            break;
+        case RPTrackOriginCodeUnknown:
+            result = TrackOriginTypeUnknown;
+            break;
     }
-    else if ([code isEqualToString:@"Bicycle"]) {
-        result = TrackOriginTypeBicycle;
-    }
-    else if ([code isEqualToString:@"Bus"]) {
-        result = TrackOriginTypeBus;
-    }
-    else if ([code isEqualToString:@"Passenger"] || [code isEqualToString:@"Passanger"]) { //EQUAL
-        result = TrackOriginTypeCar;
-    }
-    else if ([code isEqualToString:@"Motorcycle"]) {
-        result = TrackOriginTypeMotorcycle;
-    }
-    else if ([code isEqualToString:@"Running"]) {
-        result = TrackOriginTypeRunning;
-    }
-    else if ([code isEqualToString:@"Taxi"]) {
-        result = TrackOriginTypeTaxi;
-    }
-    else if ([code isEqualToString:@"Train"]) {
-        result = TrackOriginTypeTrain;
-    }
-    else if ([code isEqualToString:@"Walking"]) {
-        result = TrackOriginTypeWalking;
-    }
+    
     return result;
 }
 

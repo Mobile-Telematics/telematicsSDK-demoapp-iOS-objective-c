@@ -1,26 +1,26 @@
 PODS:
   - PNChart (0.8.9):
     - UICountingLabel (~> 1.2.0)
-  - RaxelPulse (6.0.6)
+  - TelematicsSDK (7.0.0)
   - UICountingLabel (1.2.0)
 
 DEPENDENCIES:
   - PNChart (= 0.8.9)
-  - RaxelPulse (= 6.0.6)
+  - TelematicsSDK (= 7.0.0)
   - UICountingLabel (= 1.2.0)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
-    - RaxelPulse
+    - TelematicsSDK
   trunk:
     - PNChart
     - UICountingLabel
 
 SPEC CHECKSUMS:
   PNChart: 84774d225c2126ded6c93d4dbe6ae98c3a73c2d2
-  RaxelPulse: 8322321c1bb290709c6ab1cff73c3f1dc5be136b
+  TelematicsSDK: 61be778c9b4ceaae19c72d8ff42322b7a02edb7b
   UICountingLabel: 1db4e7d023e1762171eb226d6dff47a7a84f27aa
 
-PODFILE CHECKSUM: 90051ac8f2476898b71335c90e74d10507a70d74
+PODFILE CHECKSUM: f5d4cc6f8d18c0a92ae71795574469fac9dc16d4
 
-COCOAPODS: 1.15.2
+COCOAPODS: 1.16.2

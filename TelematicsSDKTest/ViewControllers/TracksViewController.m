@@ -8,6 +8,7 @@
 
 #import "TracksViewController.h"
 #import "TrackDetailedCell.h"
+#import <TelematicsSDK//TelematicsSDK.h>
 
 @interface TracksViewController ()
 
@@ -20,6 +21,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.tracks = [[NSArray alloc] init];
     self.tracksTableView.dataSource = self;
     self.tracksTableView.delegate = self;
 }
@@ -30,25 +32,20 @@
 }
 
 - (void)loadTracks {
-    [[RPEntry instance].api getTracksWithOffset:0 limit:10 completion:^(id response, NSError *error) {
+    [[RPEntry instance].api getTracksWithOffset:0
+                                          limit:10
+                                      startDate:nil
+                                        endDate:nil
+                                     completion:^(NSArray<RPTrackProcessed *> * _Nonnull tracks, NSError * _Nullable error) {
         if (error != nil) {
             return;
         }
         
-        if (![response isKindOfClass:[RPFeed class]]) {
-            return;
-        }
-        
-        RPFeed *feed = response;
-        NSArray <RPTrackProcessed *> *tracks = feed.tracks;
-
         dispatch_async(dispatch_get_main_queue(), ^{
             NSLog(@"tracks count: %lu", (unsigned long)tracks.count);
             self.tracks = tracks;
             [self.tracksTableView reloadData];
         });
-
-
     }];
 }
 

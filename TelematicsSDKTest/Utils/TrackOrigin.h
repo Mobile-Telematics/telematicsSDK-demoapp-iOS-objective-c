@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import <TelematicsSDK//TelematicsSDK.h>
 
 typedef NS_ENUM(NSInteger, TrackOriginType) {
     TrackOriginTypeUnknown,
@@ -27,6 +28,6 @@ typedef NS_ENUM(NSInteger, TrackOriginType) {
 @interface TrackOrigin : NSObject
 
 + (UIImage *)imageForType:(TrackOriginType)state wasChangedByUser:(BOOL)changed;
-+ (TrackOriginType)typeFromTrackOriginCode:(NSString *)code;
++ (TrackOriginType)typeFromTrackOriginCode:(RPTrackOriginCode)trackOriginCode;
 
 @end

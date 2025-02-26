@@ -10,7 +10,6 @@
 #import "Format.h"
 #import "TrackOrigin.h"
 
-
 @interface TrackDetailedCell () {
     
 }

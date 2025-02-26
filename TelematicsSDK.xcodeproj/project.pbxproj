@@ -10,7 +10,6 @@
 		6203E1D321C286F300656E8F /* TrackDetailedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6203E1D221C286F300656E8F /* TrackDetailedCell.m */; };
 		6203E1D921C289D500656E8F /* TrackOrigin.m in Sources */ = {isa = PBXBuildFile; fileRef = 6203E1D521C289D400656E8F /* TrackOrigin.m */; };
 		6203E1DA21C289D500656E8F /* Format.m in Sources */ = {isa = PBXBuildFile; fileRef = 6203E1D821C289D500656E8F /* Format.m */; };
-		6203E1DE21C2D18900656E8F /* MainRatingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6203E1DD21C2D18900656E8F /* MainRatingViewController.m */; };
 		6215FD6221C174C000BB76F5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6215FD6121C174C000BB76F5 /* AppDelegate.m */; };
 		6215FD7021C174C100BB76F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6215FD6F21C174C100BB76F5 /* main.m */; };
 		7E6787748DAD66DED11CDD1A /* Pods_TelematicsSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCD19AAB67539C37A59422EC /* Pods_TelematicsSDK.framework */; };
@@ -18,7 +17,6 @@
 		81B2E8348E4D756772A41A3C /* TracksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B2EE28F9451E661E7B98F3 /* TracksViewController.m */; };
 		81B2EBAB2F1D9405ED7738E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81B2E759D4996C3F8B742DAD /* Assets.xcassets */; };
 		81B2EF18904E31778E515CEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81B2E6BA143DEF33BB6B7466 /* LaunchScreen.storyboard */; };
-		81B2EF533A2B49D6F7F7A1AB /* Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B2EE75621EA031CA541342 /* Logger.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,8 +28,6 @@
 		6203E1D621C289D500656E8F /* TrackOrigin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackOrigin.h; sourceTree = "<group>"; };
 		6203E1D721C289D500656E8F /* Format.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Format.h; sourceTree = "<group>"; };
 		6203E1D821C289D500656E8F /* Format.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Format.m; sourceTree = "<group>"; };
-		6203E1DC21C2D18900656E8F /* MainRatingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainRatingViewController.h; sourceTree = "<group>"; };
-		6203E1DD21C2D18900656E8F /* MainRatingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainRatingViewController.m; sourceTree = "<group>"; };
 		6215FD5D21C174C000BB76F5 /* TelematicsSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TelematicsSDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6215FD6021C174C000BB76F5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6215FD6121C174C000BB76F5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -40,10 +36,8 @@
 		81B2E3F03F8ABA1388A77B24 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		81B2E6BA143DEF33BB6B7466 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		81B2E759D4996C3F8B742DAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		81B2E955E7DB8BE9996B10B6 /* Logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Logger.h; sourceTree = "<group>"; };
 		81B2ED97ABE1517AAC87D8D5 /* TracksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TracksViewController.h; sourceTree = "<group>"; };
 		81B2EE28F9451E661E7B98F3 /* TracksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TracksViewController.m; sourceTree = "<group>"; };
-		81B2EE75621EA031CA541342 /* Logger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Logger.m; sourceTree = "<group>"; };
 		BCD19AAB67539C37A59422EC /* Pods_TelematicsSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TelematicsSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -84,8 +78,6 @@
 				6203E1D821C289D500656E8F /* Format.m */,
 				6203E1D621C289D500656E8F /* TrackOrigin.h */,
 				6203E1D521C289D400656E8F /* TrackOrigin.m */,
-				81B2EE75621EA031CA541342 /* Logger.m */,
-				81B2E955E7DB8BE9996B10B6 /* Logger.h */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -136,8 +128,6 @@
 		81B2E6B1D3156C7BE0509E28 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				6203E1DC21C2D18900656E8F /* MainRatingViewController.h */,
-				6203E1DD21C2D18900656E8F /* MainRatingViewController.m */,
 				81B2ED97ABE1517AAC87D8D5 /* TracksViewController.h */,
 				81B2EE28F9451E661E7B98F3 /* TracksViewController.m */,
 			);
@@ -276,8 +266,6 @@
 				6203E1DA21C289D500656E8F /* Format.m in Sources */,
 				6203E1D321C286F300656E8F /* TrackDetailedCell.m in Sources */,
 				6203E1D921C289D500656E8F /* TrackOrigin.m in Sources */,
-				81B2EF533A2B49D6F7F7A1AB /* Logger.m in Sources */,
-				6203E1DE21C2D18900656E8F /* MainRatingViewController.m in Sources */,
 				81B2E8348E4D756772A41A3C /* TracksViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

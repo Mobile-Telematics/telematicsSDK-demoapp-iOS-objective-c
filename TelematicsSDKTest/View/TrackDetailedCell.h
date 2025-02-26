@@ -6,10 +6,8 @@
 //  Copyright © 2021 DATA MOTION PTE. LTD. All rights reserved.
 //
 
-
-
 #import <UIKit/UIKit.h>
-#import <RaxelPulse/RaxelPulse.h>
+#import <TelematicsSDK/TelematicsSDK.h>
 
 @interface TrackDetailedCell : UITableViewCell
 
