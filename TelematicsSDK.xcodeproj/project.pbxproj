@@ -17,6 +17,7 @@
 		81B2E8348E4D756772A41A3C /* TracksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B2EE28F9451E661E7B98F3 /* TracksViewController.m */; };
 		81B2EBAB2F1D9405ED7738E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81B2E759D4996C3F8B742DAD /* Assets.xcassets */; };
 		81B2EF18904E31778E515CEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81B2E6BA143DEF33BB6B7466 /* LaunchScreen.storyboard */; };
+		E3B2182D2E5359D300EE9ECE /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E3B2182C2E5359D300EE9ECE /* SceneDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,8 @@
 		81B2ED97ABE1517AAC87D8D5 /* TracksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TracksViewController.h; sourceTree = "<group>"; };
 		81B2EE28F9451E661E7B98F3 /* TracksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TracksViewController.m; sourceTree = "<group>"; };
 		BCD19AAB67539C37A59422EC /* Pods_TelematicsSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TelematicsSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3B2182B2E5359D300EE9ECE /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		E3B2182C2E5359D300EE9ECE /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,8 @@
 			children = (
 				6215FD6021C174C000BB76F5 /* AppDelegate.h */,
 				6215FD6121C174C000BB76F5 /* AppDelegate.m */,
+				E3B2182B2E5359D300EE9ECE /* SceneDelegate.h */,
+				E3B2182C2E5359D300EE9ECE /* SceneDelegate.m */,
 				6215FD6E21C174C100BB76F5 /* Info.plist */,
 				81B2E6B1D3156C7BE0509E28 /* ViewControllers */,
 				6203E1D021C286D000656E8F /* View */,
@@ -223,9 +228,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-TelematicsSDK/Pods-TelematicsSDK-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-TelematicsSDK/Pods-TelematicsSDK-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -265,6 +274,7 @@
 				6215FD6221C174C000BB76F5 /* AppDelegate.m in Sources */,
 				6203E1DA21C289D500656E8F /* Format.m in Sources */,
 				6203E1D321C286F300656E8F /* TrackDetailedCell.m in Sources */,
+				E3B2182D2E5359D300EE9ECE /* SceneDelegate.m in Sources */,
 				6203E1D921C289D500656E8F /* TrackOrigin.m in Sources */,
 				81B2E8348E4D756772A41A3C /* TracksViewController.m in Sources */,
 			);
@@ -325,7 +335,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -379,7 +389,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -395,7 +405,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MTK2QVQ5B8;
 				INFOPLIST_FILE = TelematicsSDKTest/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -418,7 +428,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MTK2QVQ5B8;
 				INFOPLIST_FILE = TelematicsSDKTest/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
