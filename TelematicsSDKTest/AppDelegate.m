@@ -29,8 +29,11 @@
     if ([self userIsAuthenticated]) {
         NSError *error = nil;
         NSString *deviceId = [self getDeviceToken];
-        [[RPEntry instance] setDeviceIDWithDeviceId:deviceId
-                                              error:&error];
+        BOOL success = [[RPEntry instance] setDeviceIDWithDeviceId:deviceId
+                                                             error:&error];
+        if (!success) {
+            NSLog(@"Failed to set device id: %@", error);
+        }
     } else {
         /// You can't set an empty device token.
         /// You must use removeVirtualDeviceToken method for logout from Raxel.
