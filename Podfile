@@ -4,7 +4,7 @@ platform :ios, '12.0'
 use_frameworks!
 
 target 'TelematicsSDK' do
-  pod 'TelematicsSDK', '7.0.3'
+  pod 'TelematicsSDK', '7.1.0'
   pod 'UICountingLabel', '1.2.0'
   pod 'PNChart', '0.8.9'
 

@@ -27,14 +27,17 @@
     [RPEntry instance].locationDelegate = self;
     
     if ([self userIsAuthenticated]) {
-        [RPEntry instance].virtualDeviceToken = [self getDeviceToken];
+        NSError *error = nil;
+        NSString *deviceId = [self getDeviceToken];
+        [[RPEntry instance] setDeviceIDWithDeviceId:deviceId
+                                              error:&error];
     } else {
         /// You can't set an empty device token.
         /// You must use removeVirtualDeviceToken method for logout from Raxel.
-        [[RPEntry instance] removeVirtualDeviceToken];
+        [[RPEntry instance] logout];
     }
 
-    [RPEntry instance].disableTracking = NO;
+    [[RPEntry instance] setDisableTrackingWithDisableTracking:NO];
     [[RPEntry instance] application:application didFinishLaunchingWithOptions:launchOptions];
     return YES;
 }

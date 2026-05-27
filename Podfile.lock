@@ -1,12 +1,12 @@
 PODS:
   - PNChart (0.8.9):
     - UICountingLabel (~> 1.2.0)
-  - TelematicsSDK (7.0.3)
+  - TelematicsSDK (7.1.0)
   - UICountingLabel (1.2.0)
 
 DEPENDENCIES:
   - PNChart (= 0.8.9)
-  - TelematicsSDK (= 7.0.3)
+  - TelematicsSDK (= 7.1.0)
   - UICountingLabel (= 1.2.0)
 
 SPEC REPOS:
@@ -18,9 +18,9 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   PNChart: 84774d225c2126ded6c93d4dbe6ae98c3a73c2d2
-  TelematicsSDK: 674997aa9eb9bca1a9b02e0dd9dd2b4a93b6cb2f
+  TelematicsSDK: 0a5fd9812c48e04c032b8c437ec8ad299dd44cf4
   UICountingLabel: 1db4e7d023e1762171eb226d6dff47a7a84f27aa
 
-PODFILE CHECKSUM: a3d08b995bac2bdebc38680338eff11acaa23613
+PODFILE CHECKSUM: 6fc5ca2453712b4de0c5671a56d77d6a9cc69bc7
 
 COCOAPODS: 1.16.2
